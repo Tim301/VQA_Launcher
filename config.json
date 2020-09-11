@@ -1,0 +1,13 @@
+{
+  "service_names": [
+    "tf1_ateme","tf1_harmonic","service_3","service_4","service_5","service_6"
+  ],
+  "pidmap":{
+    "ref_1" : [0,1,2,3],
+   "ref_2" : [0,1,2,3],
+   "ref_3" : [0,1,2,3],
+   "ref_4" : [0,1,2,3],
+    "ref_5" : [0,1,2,3],
+    "ref_6" : [0,1,2,3]
+  }
+}

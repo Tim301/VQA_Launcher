@@ -59,7 +59,7 @@ def get_input(input_path):
     for i, id in enumerate(stream_id):
         index = "0:" + str(id)
         pathout = os.fspath(workdir.cwd()) + "/TS/"+ comps_name[i] + ".ts" #Must use os.fspath() to convert pathlib type into str
-        subprocess.run(['ffmpeg', '-y', '-nostats', '-loglevel', '0','-ss', '00:00:50.0001','-i',trp_path, '-c:v', 'copy', '-map', index, pathout]) #Subprocess only accept str as type path
+        subprocess.run(['ffmpeg', '-y', '-nostats', '-loglevel', '0','-ss', '00:00:05.0001','-i',trp_path, '-c:v', 'copy', '-map', index, pathout]) #Subprocess only accept str as type path
         #subprocess.run(['ffmpeg', '-y', '-nostats', '-loglevel', '0', '-i',trp_path, '-c:v', 'copy', '-map', index, pathout, "-copy_unknown"]) #Subprocess only accept str as type path
         comps.append(Path(pathout)) #Converts str path into pathlib type and adds it in comps[]
         print(str(i + 1) + "/" + str(len(stream_id)) + " programs extracted")
